@@ -11,7 +11,11 @@ import java.util.List;
 
 public class ClientServiceImpl implements ClientService {
 
-    private ClientDao clientDao = new ClientDaoImpl();
+    private ClientDao clientDao;
+
+    public ClientServiceImpl() {
+        this.clientDao = new ClientDaoImpl();
+    }
 
     @Override
     public int update(DoClient client) throws SQLException {

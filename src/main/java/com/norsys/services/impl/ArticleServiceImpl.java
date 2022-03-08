@@ -8,7 +8,11 @@ import com.norsys.services.ArticleService;
 import java.util.List;
 
 public class ArticleServiceImpl implements ArticleService {
-    private ArticleDao articleDao = new ArticleDaoImpl();
+    private ArticleDao articleDao ;
+
+    public ArticleServiceImpl() {
+        this.articleDao = new ArticleDaoImpl();
+    }
 
     @Override
     public DoArticle getById(Integer idArticle) {
