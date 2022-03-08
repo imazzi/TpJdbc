@@ -8,6 +8,12 @@ public class DoClient {
     public DoClient() {
     }
 
+    public DoClient(Integer idClient, String nom, String prenom) {
+        this.idClient = idClient;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
     public DoClient(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
@@ -35,5 +41,13 @@ public class DoClient {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+
+    @Override
+    public String toString() {
+        return "DoClient{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                '}';
     }
 }
