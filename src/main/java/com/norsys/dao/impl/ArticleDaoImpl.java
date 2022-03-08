@@ -37,8 +37,10 @@ public class ArticleDaoImpl implements ArticleDao {
 
                 article.setNom(nom);
                 article.setPrix(prix);
-
             }
+            resultat.close();
+            statement.close();
+            connexion.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -68,6 +70,9 @@ public class ArticleDaoImpl implements ArticleDao {
 
                 articles.add(article);
             }
+            resultat.close();
+            statement.close();
+            connexion.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
