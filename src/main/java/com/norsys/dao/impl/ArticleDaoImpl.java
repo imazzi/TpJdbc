@@ -29,7 +29,7 @@ public class ArticleDaoImpl implements ArticleDao {
             DbConnection dbConnection = DbConnection.getInstance();
             connexion = dbConnection.getConnexion();
             statement = connexion.createStatement();
-            resultat = statement.executeQuery("SELECT nom, prix FROM article where id = idArticle ;");
+            resultat = statement.executeQuery("SELECT nom, prix FROM article where id_article = idArticle ;");
 
             while (resultat.next()) {
                 String nom = resultat.getString("nom");
