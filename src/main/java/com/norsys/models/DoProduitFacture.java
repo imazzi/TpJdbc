@@ -1,4 +1,4 @@
-package com.norsys.beans;
+package com.norsys.models;
 
 public class DoProduitFacture {
     private Integer idArticle;

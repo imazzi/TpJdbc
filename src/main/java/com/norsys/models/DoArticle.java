@@ -1,7 +1,7 @@
-package com.norsys.beans;
+package com.norsys.models;
 
 public class DoArticle {
-    private Integer id;
+    private Integer idArticle;
     private String nom;
     private double prix;
 
@@ -10,11 +10,11 @@ public class DoArticle {
 
 
     public Integer getId() {
-        return id;
+        return idArticle;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.idArticle = idArticle;
     }
 
     public String getNom() {

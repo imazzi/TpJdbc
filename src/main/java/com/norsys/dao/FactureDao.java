@@ -1,6 +1,6 @@
 package com.norsys.dao;
 
-import com.norsys.beans.DoFacture;
+import com.norsys.models.DoFacture;
 
 import java.util.List;
 

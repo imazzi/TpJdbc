@@ -1,4 +1,4 @@
-package com.norsys.beans;
+package com.norsys.models;
 
 public class DoClient {
     private Integer idClient;

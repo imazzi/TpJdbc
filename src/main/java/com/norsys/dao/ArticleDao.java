@@ -1,6 +1,6 @@
 package com.norsys.dao;
 
-import com.norsys.beans.DoArticle;
+import com.norsys.models.DoArticle;
 
 import java.util.List;
 

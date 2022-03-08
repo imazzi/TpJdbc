@@ -1,6 +1,4 @@
-package com.norsys.beans;
-
-import com.norsys.dao.ClientDao;
+package com.norsys.models;
 
 import java.util.Date;
 
