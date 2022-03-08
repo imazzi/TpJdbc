@@ -38,4 +38,13 @@ public class DoFacture {
     public void setIdClient(Integer idClient) {
         this.idClient = idClient;
     }
+
+    @Override
+    public String toString() {
+        return "DoFacture{" +
+                "numFacture=" + numFacture +
+                ", dateFacture=" + dateFacture +
+                ", idClient=" + idClient +
+                '}';
+    }
 }
