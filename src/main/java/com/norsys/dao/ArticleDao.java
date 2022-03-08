@@ -5,7 +5,6 @@ import com.norsys.models.DoArticle;
 import java.util.List;
 
 public interface ArticleDao {
-    DoArticle getById();
+    DoArticle getById(Integer idArticle);
     List<DoArticle> getAll();
-    List<DoArticle> getClientArticles(Long idClient);
 }

@@ -32,4 +32,12 @@ public class DoArticle {
     public void setPrix(double prix) {
         this.prix = prix;
     }
+
+    @Override
+    public String toString() {
+        return "DoArticle{" +
+                "nom='" + nom + '\'' +
+                ", prix=" + prix +
+                '}';
+    }
 }
