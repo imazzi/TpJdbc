@@ -5,28 +5,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbConnection {
-    private String url;
-    private String username;
-    private String password;
+    private static String url="jdbc:h2:file:D:/pfe/NorsysFormationWorkspace/TpJDBC/database/DB_TP_JDBC.script";
+    private static String username = "SA";
+    private static String password = "";
 
-    DbConnection(String url, String username, String password) {
-        this.url = url;
-        this.username = username;
-        this.password = password;
-    }
 
-    public static DbConnection getInstance() {
+    public static Connection getConnection() throws SQLException {
         try {
             Class.forName("org.h2.Driver");
         } catch (ClassNotFoundException e) {
-
+            e.printStackTrace();
         }
-
-        DbConnection instance = new DbConnection("jdbc:h2:file:D:/pfe/NorsysFormationWorkspace/TpJDBC/database/DB_TP_JDBC.script", "SA", "");
-        return instance;
-    }
-
-    public  Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, username, password);
     }
 

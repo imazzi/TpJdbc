@@ -1,0 +1,12 @@
+2022-03-08 13:43:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT" not found; SQL statement:
+SELECT nom, prenom FROM client; [42102-190]
+2022-03-08 13:52:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT" not found; SQL statement:
+SELECT nom, prenom FROM public.client; [42102-190]
+2022-03-08 13:55:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT" not found; SQL statement:
+SELECT nom, prenom FROM client; [42102-190]
+2022-03-08 14:04:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT" not found; SQL statement:
+SELECT nom, prenom FROM client; [42102-190]

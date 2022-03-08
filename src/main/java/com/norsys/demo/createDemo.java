@@ -9,14 +9,13 @@ import java.sql.Statement;
 
 public class createDemo {
     public static void main(String[] args) {
-        DbConnection daoFactory = DbConnection.getInstance();
         Connection connexion = null;
         Statement statement = null;
         ResultSet resultat = null;
 
         try {
             System.out.println("start");
-            connexion = daoFactory.getConnection();
+            connexion = DbConnection.getConnection();
             statement = connexion.createStatement();
             resultat = statement.executeQuery("SELECT nom, prenom FROM client;");
 
