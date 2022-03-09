@@ -41,10 +41,8 @@ public class DoFacture {
 
     @Override
     public String toString() {
-        return "DoFacture{" +
-                "numFacture=" + numFacture +
+        return "numFacture=" + numFacture +
                 ", dateFacture=" + dateFacture +
-                ", idClient=" + idClient +
-                '}';
+                ", idClient=" + idClient +"\n";
     }
 }

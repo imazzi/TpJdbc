@@ -8,7 +8,7 @@ import java.util.List;
 public interface FactureDao {
     List<DoFacture> getAll() throws SQLException;
     List<DoFacture> getFacturesByIdClient(Integer idClient) throws SQLException;
-    DoFacture save(DoFacture facture) throws SQLException;
+    int save(DoFacture facture) throws SQLException;
 
 
 }

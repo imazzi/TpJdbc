@@ -22,7 +22,7 @@ public class FactureServiceImpl implements FactureService {
         }
 
         @Override
-        public DoFacture save(DoFacture facture) throws SQLException {
+        public int save(DoFacture facture) throws SQLException {
             return factureDao.save(facture);
         }
     }

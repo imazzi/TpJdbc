@@ -45,9 +45,8 @@ public class DoClient {
 
     @Override
     public String toString() {
-        return "DoClient{" +
-                "nom='" + nom + '\'' +
+        return "nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
-                '}';
+                "\n";
     }
 }
